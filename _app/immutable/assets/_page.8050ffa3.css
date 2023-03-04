@@ -1,0 +1,206 @@
+body.dark .modal.svelte-h5am7q.svelte-h5am7q{background:#4d4d4d}body.dark .modal.svelte-h5am7q button.close.svelte-h5am7q{background:#2d2d2d;color:white}body.dark .modal.svelte-h5am7q .history.svelte-h5am7q{background:#626262}.value-modal.svelte-h5am7q.svelte-h5am7q{position:fixed;z-index:50;top:0;left:0;right:0;bottom:0;display:flex;flex-flow:column;align-items:stretch;justify-content:flex-end;pointer-events:none}.value-modal.svelte-h5am7q .modal.svelte-h5am7q{width:100%;height:calc(100vh - 100px);border-top-left-radius:1rem;border-top-right-radius:1rem;background:white;box-shadow:0 0 6rem rgba(0, 0, 0, 0.3);display:flex;flex-flow:column;align-items:stretch;padding:1rem;padding-bottom:0;pointer-events:visibleFill}.value-modal.svelte-h5am7q .modal .history.svelte-h5am7q{width:100%;flex:1;background:#EFEFEF;border-top-left-radius:1rem;border-top-right-radius:1rem;padding:1rem;display:flex;flex-flow:column;align-items:stretch}.value-modal.svelte-h5am7q .modal .history small.svelte-h5am7q{align-self:center;font-weight:400;font-size:0.8rem;color:black}.value-modal.svelte-h5am7q .modal .actions.svelte-h5am7q{width:100%;display:flex;flex-flow:column;align-items:stretch;margin-bottom:1rem}.value-modal.svelte-h5am7q .modal .actions .line.svelte-h5am7q{width:100%;display:flex;flex-flow:row nowrap;align-items:center;justify-content:space-between;margin-bottom:0.5rem}.value-modal.svelte-h5am7q .modal .actions .line button.action.svelte-h5am7q{flex:1;height:48px;padding:0;margin:0;background:#FFD600;border-radius:1rem;font-weight:500;font-size:1rem;color:black;transition:all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1)}.value-modal.svelte-h5am7q .modal .actions .line button.action.svelte-h5am7q:active{transform:scale(0.9)}.value-modal.svelte-h5am7q .modal .actions .line button.action.svelte-h5am7q:not(:last-child){margin-right:0.5rem}.value-modal.svelte-h5am7q .modal .actions button.subaction.svelte-h5am7q{width:100%;height:48px;padding:0;margin:0;background:rgba(255, 214, 0, 0.3);border-radius:1rem;font-weight:500;font-size:1rem;color:black;transition:all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1)}.value-modal.svelte-h5am7q .modal .actions button.subaction.svelte-h5am7q:active{transform:scale(0.9)}.value-modal.svelte-h5am7q .modal .actions button.subaction.svelte-h5am7q:not(:last-child){margin-right:0.5rem}.value-modal.svelte-h5am7q .modal button.close.svelte-h5am7q{width:100%;height:48px;margin-bottom:1rem;border-radius:1rem;background:#EFEFEF;color:black;font-weight:500;font-size:1rem;transition:all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1)}.value-modal.svelte-h5am7q .modal button.close.svelte-h5am7q:active{transform:scale(0.9)}.value-modal.svelte-h5am7q .modal p.account-name.svelte-h5am7q{font-weight:500;font-size:1rem;margin:0;padding:0;margin-bottom:0.5rem}.value-modal.svelte-h5am7q .modal p.value.svelte-h5am7q{font-weight:bold;font-size:2rem;color:black;margin:0;padding:0;margin-bottom:1rem}.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  padding: 2rem 1rem;
+  padding-bottom: 6rem;
+  background: #EFEFEF;
+  overflow-y: auto;
+}
+.page .header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .header .profile {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page .header .profile img {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.5rem;
+  border-radius: 32px;
+  outline: 2px solid #FFD600;
+}
+.page .header .profile .text {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.page .header .profile .text p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+.page .header .profile .text small {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #626262;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.page .header .profile .text small span {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 24px;
+  background: #FFFFFF;
+  padding: 2px 6px;
+  border-radius: 16px;
+  color: black;
+  margin: 0 0 0 0.25rem;
+}
+.page .header .profile .text small span img {
+  width: 12px;
+  height: 12px;
+  outline: none;
+}
+.page .header .actions {
+  width: max-content;
+  height: 48px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.page .header .actions button.action {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.page .header .actions button.action:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.page .header .actions button.action:active {
+  transform: scale(0.9);
+}
+.page .header .actions button.action img {
+  width: 100%;
+}
+.page .card {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  background: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+.page .card .card-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.page .card .card-header h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.page .card .space {
+  height: 1rem;
+}
+.page .card .btn-holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .card .btn-holder button {
+  padding: 0 1rem !important;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 214, 0, 0.5);
+}
+.page .card .btn-holder button img {
+  height: 50%;
+  margin-right: 0.5rem;
+}
+.page .card .account-box {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.5rem;
+}
+.page .card .account-box button.account {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.page .card .account-box button.account p.type {
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.page .card .account-box button.account .right {
+  padding: 0.25rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.page .card .account-box button.account .right p.value {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.page .card .account-box button.account .right img {
+  height: 100%;
+  margin-left: 0.5rem;
+}
+.page .card .account-box button.account:active {
+  background: #efefef;
+}
+.page .card .account-box button.account:not(:last-child) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.load-box {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.load-box img {
+  width: 100%;
+}
+.load-box p {
+  animation: pulse 2s cubic-bezier(0.25, 0, 0, 1) infinite;
+}
